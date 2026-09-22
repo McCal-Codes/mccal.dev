@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-09-21T18:37:06.282Z",
+  "generatedAt": "2026-09-22T06:47:58.627Z",
   "repos": [
     {
       "slug": "terranova",
@@ -175,16 +175,23 @@
       "createdAt": "2026-09-15",
       "pushedAt": "2026-09-21",
       "defaultBranch": "main",
-      "stars": 45,
+      "stars": 46,
       "forks": 4,
       "latestRelease": {
-        "tag": "v0.6.5",
-        "name": "Folio 0.6.5",
-        "date": "2026-09-20",
+        "tag": "v0.6.6",
+        "name": "Folio 0.6.6",
+        "date": "2026-09-21",
         "prerelease": false,
-        "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.5"
+        "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.6"
       },
       "releases": [
+        {
+          "tag": "v0.6.6",
+          "name": "Folio 0.6.6",
+          "date": "2026-09-21",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.6"
+        },
         {
           "tag": "v0.6.5",
           "name": "Folio 0.6.5",
