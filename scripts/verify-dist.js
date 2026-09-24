@@ -16,6 +16,7 @@ const REQUIRED = [
   '404.html',
   'sitemap.xml',
   'robots.txt',
+  'CNAME',
   'notes/index.html',
   'roadmap/index.html',
   'about/index.html',
@@ -44,6 +45,20 @@ for (const path of MUST_NOT_EXIST) {
   } catch {
     /* expected */
   }
+}
+
+/*
+ * The custom domain lives in the Pages artifact, not only in the repository's
+ * settings: a deploy whose artifact has no CNAME clears the custom domain, which
+ * would point mccal.dev at nothing and leave the old host redirecting to it. So a
+ * build that loses or changes this file fails here rather than in production.
+ */
+const DOMAIN = 'mccal.dev';
+try {
+  const cname = readFileSync(join(dist, 'CNAME'), 'utf8').trim();
+  if (cname !== DOMAIN) problems.push(`dist/CNAME says "${cname}", expected "${DOMAIN}"`);
+} catch {
+  /* already reported as missing above */
 }
 
 // Route pages carry their content in the HTML, not just an empty app shell.
