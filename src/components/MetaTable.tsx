@@ -61,6 +61,18 @@ export default function MetaTable({ project }: MetaTableProps) {
     }
 
     rows.push({ term: 'Last push', value: formatDate(repo.pushedAt), live: true });
+
+    // The product's own site, when it has one. Taken from the repository's homepage
+    // field rather than written here, so there is one place to change it.
+    if (repo.homepage) {
+      rows.push({
+        term: 'Website',
+        value: repo.homepage.replace(/^https?:\/\//, '').replace(/\/$/, ''),
+        href: repo.homepage,
+        live: true,
+      });
+    }
+
     rows.push({ term: 'Repository', value: repo.fullName, href: repo.url, live: true });
   }
 

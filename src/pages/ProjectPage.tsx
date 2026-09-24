@@ -44,6 +44,45 @@ function SectionBody({ section, slug }: { section: CaseStudySection; slug: strin
         <Timeline entries={section.timeline} />
       )}
 
+      {section.kind === 'packages' && section.packages && (
+        <ul className={styles.packages}>
+          {section.packages.map((pkg) => {
+            const companion = getRepo(pkg.slug);
+            return (
+              <li className={styles.package} key={pkg.slug}>
+                <h3 className={styles.packageName}>
+                  {companion ? (
+                    <a
+                      className={styles.packageLink}
+                      href={companion.url}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {pkg.name}
+                      <span aria-hidden="true"> ↗</span>
+                    </a>
+                  ) : (
+                    pkg.name
+                  )}
+                </h3>
+                <p className={styles.packageSummary}>{pkg.summary}</p>
+                {companion && (
+                  <p className={`${styles.packageStats} meta`}>
+                    {[
+                      companion.latestRelease?.tag,
+                      companion.license,
+                      `Updated ${formatDate(companion.pushedAt)}`,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
+                  </p>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
       {section.kind === 'releases' &&
         (releases.length > 0 ? (
           <ul className={styles.releases}>
@@ -154,7 +193,12 @@ export default function ProjectPage() {
         </div>
       </header>
 
-      <SectionNav repoHref={repo?.url} sections={project.sections} title={project.title} />
+      <SectionNav
+        repoHref={repo?.url}
+        sections={project.sections}
+        siteHref={repo?.homepage || undefined}
+        title={project.title}
+      />
 
       <div className="shell">
         {project.sections.map((section, i) => (

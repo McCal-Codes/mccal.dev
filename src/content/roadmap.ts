@@ -60,6 +60,20 @@ export const ROADMAP: RoadmapGroup[] = [
         detail:
           'The project index became a grid of project tiles, and the case studies got real captures in place of the reserved frames.',
       },
+      {
+        marker: '2026.09',
+        date: 'September 2026',
+        title: 'Folio Market, and signed sources',
+        detail:
+          'Folio reads sources: signed package lists that show their key fingerprint before they are trusted, and are pinned to that key afterwards.',
+      },
+      {
+        marker: '2026.09',
+        date: 'September 2026',
+        title: 'Keyd published as a Folio source',
+        detail:
+          'The keyboard ships from its own repository, listed as a package under Folio. Android requires a keyboard to be its own input method service, so it cannot live inside the launcher.',
+      },
     ],
   },
   {
@@ -77,9 +91,9 @@ export const ROADMAP: RoadmapGroup[] = [
       {
         marker: 'Folio',
         date: 'In progress',
-        title: 'Folders, hidden apps, and adaptive layouts',
+        title: '0.7.0: the Market opens to everyone',
         detail:
-          'Folders past two apps, hidden apps behind a lock, a Work Apps switch, and layouts that adapt to each screen and fold.',
+          'The Market ships beyond the dev builds, opened by a supporter code, with folders past two apps, hidden apps behind a lock, and layouts that adapt to each screen and fold.',
         current: true,
       },
       {

@@ -110,7 +110,30 @@ export interface TimelineEntry {
 
 /* -- Sections ------------------------------------------------------------ */
 
-export type SectionKind = 'prose' | 'diagram' | 'shots' | 'timeline' | 'releases' | 'list';
+export type SectionKind =
+  | 'prose'
+  | 'diagram'
+  | 'shots'
+  | 'timeline'
+  | 'releases'
+  | 'list'
+  | 'packages';
+
+/**
+ * A companion repository that belongs to a project rather than beside it: a
+ * separate app or source the project publishes, which has its own releases but no
+ * place of its own in the index.
+ *
+ * `slug` keys into `github.json` exactly as a project's does, so the version,
+ * license and last push are measured rather than written. Only the one sentence
+ * saying why the thing is separate is hand-written here.
+ */
+export interface CompanionPackage {
+  slug: string;
+  name: string;
+  /** Why it is its own thing. One sentence. */
+  summary: string;
+}
 
 export interface CaseStudySection {
   /** Anchor id. Drives the sticky command bar. */
@@ -125,6 +148,7 @@ export interface CaseStudySection {
   diagram?: DiagramSpec;
   shots?: AnnotatedShot[];
   timeline?: TimelineEntry[];
+  packages?: CompanionPackage[];
 }
 
 /* -- Project ------------------------------------------------------------- */

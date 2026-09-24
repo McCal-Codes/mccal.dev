@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-09-24T06:48:12.630Z",
+  "generatedAt": "2026-09-24T16:44:13.119Z",
   "repos": [
     {
       "slug": "terranova",
@@ -145,7 +145,7 @@
       "url": "https://github.com/McCal-Codes/folio",
       "private": false,
       "description": "Folio Launcher: a clean, iPhone-style (iOS) Home Screen for Android foldables like the Galaxy Z Fold, with jailbreak-inspired tweaks. Free, open source, no root.",
-      "homepage": "https://mccal-codes.github.io/projects/folio/",
+      "homepage": "https://foliolauncher.com",
       "license": "MIT",
       "topics": [
         "android",
@@ -180,7 +180,7 @@
       "pushedAt": "2026-09-24",
       "defaultBranch": "main",
       "stars": 50,
-      "forks": 4,
+      "forks": 7,
       "latestRelease": {
         "tag": "v0.6.6",
         "name": "Folio 0.6.6",
@@ -223,6 +223,56 @@
           "date": "2026-09-15",
           "prerelease": false,
           "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.5.0"
+        }
+      ]
+    },
+    {
+      "slug": "folio-keyd",
+      "owner": "McCal-Codes",
+      "repo": "folio-keyd",
+      "fullName": "McCal-Codes/folio-keyd",
+      "url": "https://github.com/McCal-Codes/folio-keyd",
+      "private": false,
+      "description": "Keyd: a keyboard for Folio. A separate app, because Android requires a keyboard to be its own input method service.",
+      "homepage": "https://mccal-codes.github.io/folio-keyd/",
+      "license": "MIT",
+      "topics": [],
+      "languages": [
+        {
+          "name": "Kotlin",
+          "percent": 88
+        },
+        {
+          "name": "Python",
+          "percent": 11
+        }
+      ],
+      "createdAt": "2026-09-18",
+      "pushedAt": "2026-09-21",
+      "defaultBranch": "main",
+      "stars": 0,
+      "forks": 0,
+      "latestRelease": {
+        "tag": "v0.1.1",
+        "name": "Keyd 0.1.1",
+        "date": "2026-09-21",
+        "prerelease": false,
+        "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.1.1"
+      },
+      "releases": [
+        {
+          "tag": "v0.1.1",
+          "name": "Keyd 0.1.1",
+          "date": "2026-09-21",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.1.1"
+        },
+        {
+          "tag": "v0.1.0",
+          "name": "Keyd 0.1.0",
+          "date": "2026-09-21",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.1.0"
         }
       ]
     }

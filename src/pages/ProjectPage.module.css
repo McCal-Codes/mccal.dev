@@ -183,6 +183,50 @@
   color: var(--dim);
 }
 
+/* --- Packages ----------------------------------------------------------- */
+
+/* A companion the project publishes: its own repository, its own releases, no row
+   of its own in the index. Version and license come from the GitHub sync. */
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: var(--measure);
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.package {
+  padding-top: 1.25rem;
+  border-top: var(--rule);
+}
+
+.packageName {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.packageLink {
+  color: var(--text);
+  transition: color var(--dur) var(--ease);
+}
+
+.packageLink:hover {
+  color: var(--accent);
+}
+
+.packageSummary {
+  margin: 0.375rem 0 0;
+  color: var(--muted);
+}
+
+.packageStats {
+  margin: 0.5rem 0 0;
+  color: var(--dim);
+}
+
 /* --- Responsive --------------------------------------------------------- */
 
 @media (max-width: 60rem) {

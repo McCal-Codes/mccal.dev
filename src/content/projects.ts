@@ -318,6 +318,24 @@ export const PROJECTS: Project[] = [
         ],
       },
       {
+        id: 'packages',
+        label: 'Packages',
+        heading: 'Packages, and Keyd',
+        kind: 'packages',
+        body: [
+          'Folio reads sources: signed lists of themes, tweaks and apps that the Market installs. A source shows its key fingerprint before Folio trusts it, and pins that key from then on, so a host answering with a different key fails the signature rather than being installed.',
+          'Keyd is published that way. It is a keyboard, which Android requires to be its own input method service, so it cannot live inside the launcher. It is its own app and its own repository, listed as a package under Folio rather than as a project beside it.',
+        ],
+        packages: [
+          {
+            slug: 'folio-keyd',
+            name: 'Keyd',
+            summary:
+              'A keyboard for Folio. It types, corrects, learns, expands shortcuts, splits around a fold, and speaks six languages.',
+          },
+        ],
+      },
+      {
         id: 'releases',
         label: 'Releases',
         heading: 'Releases',
@@ -345,6 +363,18 @@ export const PROJECTS: Project[] = [
 export function getProject(slug: string): Project | undefined {
   return PROJECTS.find((project) => project.slug === slug);
 }
+
+/**
+ * Every repository the site speaks for, in display order: each project, then the
+ * companions its `packages` sections list. Derived rather than written, so the
+ * footer cannot fall out of step with what the pages actually show.
+ */
+export const REPO_SLUGS: string[] = [
+  ...PROJECTS.map((project) => project.slug),
+  ...PROJECTS.flatMap((project) =>
+    project.sections.flatMap((section) => section.packages?.map((pkg) => pkg.slug) ?? []),
+  ),
+];
 
 /** Projects with a written case study, and therefore a route. */
 export const PROJECTS_WITH_CASE_STUDIES = PROJECTS.filter(
