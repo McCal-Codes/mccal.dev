@@ -6,15 +6,15 @@ import type { ActivityEntry } from './types';
  */
 export const ACTIVITY: ActivityEntry[] = [
   {
-    project: 'TerraNova',
-    slug: 'terranova',
-    detail: 'Working the alpha channel toward a preview you can trust, and making density fields inspectable.',
-  },
-  {
     project: 'Folio',
     slug: 'folio',
     detail:
-      'Folders past two apps, hidden apps behind a lock, a Work Apps switch, and layouts that adapt to each screen and fold.',
+      'The Market opens to everyone in 0.7.0, reading signed sources. Keyd, the keyboard, is the first app published through one.',
+  },
+  {
+    project: 'TerraNova',
+    slug: 'terranova',
+    detail: 'Working the alpha channel toward a preview you can trust, and making density fields inspectable.',
   },
   {
     project: 'Abridgd',

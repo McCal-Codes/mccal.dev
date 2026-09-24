@@ -34,6 +34,9 @@ const TARGETS = [
   { slug: 'terranova', owner: 'McCal-Codes', repo: 'TerraNova', releases: true },
   { slug: 'abridgd', owner: 'McCal-Codes', repo: 'abridgd', releases: true },
   { slug: 'folio', owner: 'McCal-Codes', repo: 'folio', releases: true },
+  // Not a project of its own: Keyd is listed as a package under Folio, and the
+  // Folio case study's `packages` section reads this slug for its real version.
+  { slug: 'folio-keyd', owner: 'McCal-Codes', repo: 'folio-keyd', releases: true },
 ];
 
 function headers() {

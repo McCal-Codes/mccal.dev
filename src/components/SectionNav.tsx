@@ -7,6 +7,8 @@ interface SectionNavProps {
   /** Rendered first, before the section links. Usually the project name. */
   title: string;
   repoHref?: string;
+  /** The product's own site, when it has one. Labelled by its host, not "Website". */
+  siteHref?: string;
 }
 
 /**
@@ -16,7 +18,7 @@ interface SectionNavProps {
  * so the active entry tracks the section you are reading rather than the one that
  * happens to be centered.
  */
-export default function SectionNav({ sections, title, repoHref }: SectionNavProps) {
+export default function SectionNav({ sections, title, repoHref, siteHref }: SectionNavProps) {
   const [activeId, setActiveId] = useState<string>(sections[0]?.id ?? '');
   /**
    * Which sections are currently in the observation band.
@@ -87,6 +89,20 @@ export default function SectionNav({ sections, title, repoHref }: SectionNavProp
               </a>
             </li>
           ))}
+
+          {siteHref && (
+            <li>
+              <a
+                className={`${styles.link} ${styles.external} meta`}
+                href={siteHref}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {siteHref.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            </li>
+          )}
 
           {repoHref && (
             <li>

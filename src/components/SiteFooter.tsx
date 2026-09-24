@@ -1,14 +1,15 @@
 import { SITE } from '@/content/site';
 import { GITHUB_SYNCED_AT, formatDate, getRepo } from '@/content/github';
-import { PROJECTS } from '@/content/projects';
+import { REPO_SLUGS } from '@/content/projects';
 import styles from './SiteFooter.module.css';
 
 /**
- * Repositories are derived from the project index rather than listed separately,
- * so the footer cannot fall out of step with what the site actually shows. Star and
- * fork counts are pulled, not written.
+ * Repositories are derived from the project index and the companions its case
+ * studies list, rather than written out separately, so the footer cannot fall out
+ * of step with what the site actually shows. Star and fork counts are pulled, not
+ * written.
  */
-const REPOSITORIES = PROJECTS.map((project) => getRepo(project.slug)).filter(
+const REPOSITORIES = REPO_SLUGS.map((slug) => getRepo(slug)).filter(
   (repo): repo is NonNullable<typeof repo> => repo !== undefined,
 );
 
