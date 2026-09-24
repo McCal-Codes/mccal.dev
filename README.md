@@ -2,10 +2,6 @@
 
 Technical product portfolio, published at [mccal.dev](https://mccal.dev).
 
-`mccal-codes.github.io` is the GitHub Pages origin and 301s here. The other project Pages sites
-in the organisation (`folio-keyd`, `folio-tweaks`, `abridgd-site`) move with it and are served at
-`mccal.dev/<repo>/`.
-
 ## Purpose
 
 `mcc-cal.com` is an editorial photography portfolio. This is a separate publication for software
@@ -64,11 +60,28 @@ GitHub Actions builds and publishes to GitHub Pages on every push to `main`
 two decisions.
 
 **`public/CNAME` is load-bearing.** It carries the custom domain into the deploy artifact. An
-Actions deploy whose artifact has no `CNAME` clears the custom domain in the repository's Pages
-settings, which would take `mccal.dev` down and leave the origin redirecting to nothing.
-`verify:dist` requires the file and checks what it says, so losing it fails the build instead.
-DNS lives in Cloudflare: apex A/AAAA records at the Pages addresses plus a `www` CNAME, all
-DNS-only, because proxying them breaks certificate issuance.
+Actions deploy whose artifact has no `CNAME` can clear the custom domain in the repository's Pages
+settings, which would take `mccal.dev` down. `verify:dist` requires the file and checks what it
+says, so losing it fails the build instead. DNS lives in Cloudflare: apex A/AAAA records at the
+Pages addresses plus a `www` CNAME, all DNS-only, because proxying them breaks certificate
+issuance.
+
+### Why this is not the organisation site repository
+
+This repository is `McCal-Codes/mccal.dev`, a *project* Pages site that happens to own the apex
+domain. The organisation site, `McCal-Codes/mccal-codes.github.io`, is a separate repository
+holding one redirect page and **no custom domain**. That separation is deliberate.
+
+Project Pages sites in this organisation are served at `mccal-codes.github.io/<repo>/`, and some
+of those URLs are pinned inside shipped software: Folio's supporter source is the constant
+`SUPPORTER_SOURCE = "https://mccal-codes.github.io/folio-keyd/"` in a released build, and the
+Market's HTTP client refuses a redirect to an insecure link.
+
+Putting a custom domain on the organisation site repository makes GitHub redirect every
+`mccal-codes.github.io/<repo>/` URL to that domain over **http**. Enabling HTTPS enforcement does
+not fix it; the origin redirect stays on http. This was tried on 24 September 2026 and broke the
+Folio supporter source until the domain was removed. Keeping the domain on this repository instead
+means no domain decision here can reach that namespace.
 
 **Routes are pre-rendered.** Pages has no rewrite mechanism, so an SPA normally
 serves every deep link under an HTTP 404. This site is indexed, so
