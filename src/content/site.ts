@@ -1,7 +1,7 @@
 export const SITE = {
   name: 'McCal Development',
   shortName: 'McCal Dev',
-  url: 'https://mccal-codes.github.io',
+  url: 'https://mccal.dev',
   person: 'Caleb McCartney',
   /** The homepage display name. Matches the Ko-fi banner. */
   headline: 'McCal',

@@ -94,7 +94,7 @@ try {
   if (!page.includes('http-equiv="Content-Security-Policy"')) {
     problems.push('dist/notes/index.html has no CSP meta tag');
   }
-  if (!page.includes('rel="canonical" href="https://mccal-codes.github.io/notes/"')) {
+  if (!page.includes('rel="canonical" href="https://mccal.dev/notes/"')) {
     problems.push('dist/notes/index.html has no canonical, or it points elsewhere');
   }
   if (page.includes('vercel')) problems.push('dist/notes/index.html still references vercel');

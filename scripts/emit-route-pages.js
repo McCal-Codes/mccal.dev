@@ -19,7 +19,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
 const serverEntry = join(root, 'dist-server', 'entry-server.js');
 
-const SITE_URL = 'https://mccal-codes.github.io';
+const SITE_URL = 'https://mccal.dev';
 
 const STATIC_ROUTES = ['/', '/notes', '/roadmap', '/about'];
 

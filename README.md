@@ -1,7 +1,10 @@
 # McCal Development
 
-Technical product portfolio, published at
-[mccal-codes.github.io](https://mccal-codes.github.io).
+Technical product portfolio, published at [mccal.dev](https://mccal.dev).
+
+`mccal-codes.github.io` is the GitHub Pages origin and 301s here. The other project Pages sites
+in the organisation (`folio-keyd`, `folio-tweaks`, `abridgd-site`) move with it and are served at
+`mccal.dev/<repo>/`.
 
 ## Purpose
 
@@ -60,6 +63,13 @@ GitHub Actions builds and publishes to GitHub Pages on every push to `main`
 (`.github/workflows/deploy.yml`). Pages serves static files only, which drives
 two decisions.
 
+**`public/CNAME` is load-bearing.** It carries the custom domain into the deploy artifact. An
+Actions deploy whose artifact has no `CNAME` clears the custom domain in the repository's Pages
+settings, which would take `mccal.dev` down and leave the origin redirecting to nothing.
+`verify:dist` requires the file and checks what it says, so losing it fails the build instead.
+DNS lives in Cloudflare: apex A/AAAA records at the Pages addresses plus a `www` CNAME, all
+DNS-only, because proxying them breaks certificate issuance.
+
 **Routes are pre-rendered.** Pages has no rewrite mechanism, so an SPA normally
 serves every deep link under an HTTP 404. This site is indexed, so
 `scripts/emit-route-pages.js` writes a real `index.html` per route, with the page's
@@ -80,7 +90,7 @@ site, these are not recoverable without a proxy in front of it:
 | --- | --- |
 | `Content-Security-Policy` | Kept, as a `<meta>` tag. `frame-ancestors` is ignored in meta and was dropped. |
 | `X-Frame-Options` | Lost. With `frame-ancestors` also inert, the site has no clickjacking protection. |
-| `Strict-Transport-Security` | Kept. GitHub serves it on `github.io` (`max-age=31556952`). A custom domain would lose it. |
+| `Strict-Transport-Security` | Not served on the custom domain, and it does not matter: `.dev` is on the HSTS preload list at the TLD level, so browsers refuse plain HTTP to `mccal.dev` with or without the header. |
 | `Permissions-Policy` | Lost. No meta equivalent. |
 | `Cross-Origin-Opener-Policy` | Lost. No meta equivalent. |
 | `X-Content-Type-Options` | Lost. Low impact: no uploads, all assets content-hashed. |

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mccal-codes.github.io/sitemap.xml
+Sitemap: https://mccal.dev/sitemap.xml
