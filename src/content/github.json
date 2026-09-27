@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-09-27T06:47:01.850Z",
+  "generatedAt": "2026-09-27T18:35:59.301Z",
   "repos": [
     {
       "slug": "terranova",
@@ -183,16 +183,23 @@
       "createdAt": "2026-09-15",
       "pushedAt": "2026-09-27",
       "defaultBranch": "main",
-      "stars": 53,
+      "stars": 54,
       "forks": 7,
       "latestRelease": {
-        "tag": "v0.6.6",
-        "name": "Folio 0.6.6",
-        "date": "2026-09-21",
+        "tag": "v0.6.7",
+        "name": "Folio 0.6.7",
+        "date": "2026-09-27",
         "prerelease": false,
-        "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.6"
+        "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.7"
       },
       "releases": [
+        {
+          "tag": "v0.6.7",
+          "name": "Folio 0.6.7",
+          "date": "2026-09-27",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.7"
+        },
         {
           "tag": "v0.6.6",
           "name": "Folio 0.6.6",
@@ -257,13 +264,20 @@
       "stars": 0,
       "forks": 0,
       "latestRelease": {
-        "tag": "v0.1.1",
-        "name": "Keyd 0.1.1",
-        "date": "2026-09-21",
+        "tag": "v0.2.0",
+        "name": "Keyd 0.2.0",
+        "date": "2026-09-27",
         "prerelease": false,
-        "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.1.1"
+        "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.2.0"
       },
       "releases": [
+        {
+          "tag": "v0.2.0",
+          "name": "Keyd 0.2.0",
+          "date": "2026-09-27",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.2.0"
+        },
         {
           "tag": "v0.1.1",
           "name": "Keyd 0.1.1",
