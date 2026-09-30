@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-09-29T18:40:38.886Z",
+  "generatedAt": "2026-09-30T06:51:48.627Z",
   "repos": [
     {
       "slug": "terranova",
@@ -183,16 +183,23 @@
       "createdAt": "2026-09-15",
       "pushedAt": "2026-09-29",
       "defaultBranch": "main",
-      "stars": 56,
+      "stars": 57,
       "forks": 7,
       "latestRelease": {
-        "tag": "v0.6.7",
-        "name": "Folio 0.6.7",
-        "date": "2026-09-27",
+        "tag": "v0.6.7.3",
+        "name": "Folio 0.6.7.3",
+        "date": "2026-09-29",
         "prerelease": false,
-        "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.7"
+        "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.7.3"
       },
       "releases": [
+        {
+          "tag": "v0.6.7.3",
+          "name": "Folio 0.6.7.3",
+          "date": "2026-09-29",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.6.7.3"
+        },
         {
           "tag": "v0.6.7",
           "name": "Folio 0.6.7",
@@ -259,18 +266,25 @@
         }
       ],
       "createdAt": "2026-09-18",
-      "pushedAt": "2026-09-28",
+      "pushedAt": "2026-09-29",
       "defaultBranch": "main",
       "stars": 0,
       "forks": 0,
       "latestRelease": {
-        "tag": "v0.3.0",
-        "name": "Keyd 0.3.0",
-        "date": "2026-09-28",
+        "tag": "v0.3.1",
+        "name": "Keyd 0.3.1",
+        "date": "2026-09-29",
         "prerelease": false,
-        "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.3.0"
+        "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.3.1"
       },
       "releases": [
+        {
+          "tag": "v0.3.1",
+          "name": "Keyd 0.3.1",
+          "date": "2026-09-29",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/folio-keyd/releases/tag/v0.3.1"
+        },
         {
           "tag": "v0.3.0",
           "name": "Keyd 0.3.0",
