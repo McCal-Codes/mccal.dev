@@ -5,18 +5,19 @@ export const SITE = {
   person: 'Caleb McCartney',
   /** The homepage display name. Matches the Ko-fi banner. */
   headline: 'McCal',
-  role: 'Photojournalist & Developer',
+  role: 'Software Designer & Developer',
   /** In Caleb's own words. */
   intro: 'Hello, I just have fun.',
   /** Used for the meta description, where the intro alone says too little. */
   description:
-    'Caleb McCartney (McCal) is a photojournalist and developer. Folio, TerraNova, and Abridgd.',
+    'Caleb McCartney (McCal) is a software designer and developer, and a photojournalist. Folio, TerraNova, and Abridgd.',
   github: 'https://github.com/McCal-Codes',
   /** The editorial photography portfolio. Same person, different medium. */
   portfolio: 'https://mcc-cal.com',
   portfolioLabel: 'mcc-cal.com',
   githubLabel: 'github.com/McCal-Codes',
   kofi: 'https://ko-fi.com/mccal',
+  resume: '/Caleb-McCartney-Resume.pdf',
 } as const;
 
 /**
