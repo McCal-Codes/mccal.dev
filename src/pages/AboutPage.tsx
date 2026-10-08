@@ -3,6 +3,7 @@ import { useDocumentMeta } from '@/lib/useDocumentTitle';
 import styles from './PageShell.module.css';
 
 const LINKS = [
+  { label: 'Resume (PDF)', href: SITE.resume },
   { label: 'Photography portfolio', href: SITE.portfolio },
   { label: 'GitHub', href: SITE.github },
   { label: 'Support on Ko-fi', href: SITE.kofi },
