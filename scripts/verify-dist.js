@@ -63,8 +63,8 @@ try {
 
 // Route pages carry their content in the HTML, not just an empty app shell.
 const RENDERED = {
-  'index.html': 'Photojournalist &amp; Developer',
-  'about/index.html': 'Photojournalist &amp; Developer',
+  'index.html': 'Software Designer &amp; Developer',
+  'about/index.html': 'Software Designer &amp; Developer',
   'projects/terranova/index.html': 'An offline design studio for Hytale World Generation V2.',
   'projects/abridgd/index.html': 'Where it stands',
   'projects/folio/index.html': 'Why I made this',
