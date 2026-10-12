@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-10-12T07:12:40.520Z",
+  "generatedAt": "2026-10-12T18:42:44.014Z",
   "repos": [
     {
       "slug": "terranova",
@@ -169,14 +169,14 @@
       "languages": [
         {
           "name": "Kotlin",
-          "percent": 93
-        },
-        {
-          "name": "Python",
-          "percent": 3
+          "percent": 92
         },
         {
           "name": "JavaScript",
+          "percent": 3
+        },
+        {
+          "name": "Python",
           "percent": 3
         }
       ],
