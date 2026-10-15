@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-10-15T06:49:28.431Z",
+  "generatedAt": "2026-10-15T18:39:16.369Z",
   "repos": [
     {
       "slug": "terranova",
@@ -174,17 +174,13 @@
         {
           "name": "JavaScript",
           "percent": 3
-        },
-        {
-          "name": "Python",
-          "percent": 3
         }
       ],
       "createdAt": "2026-09-15",
       "pushedAt": "2026-10-15",
       "defaultBranch": "main",
       "stars": 79,
-      "forks": 9,
+      "forks": 10,
       "latestRelease": {
         "tag": "v0.6.8",
         "name": "Folio 0.6.8",
