@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-10-21T06:50:01.485Z",
+  "generatedAt": "2026-10-21T16:27:15.004Z",
   "repos": [
     {
       "slug": "terranova",
@@ -175,7 +175,7 @@
       "createdAt": "2026-09-15",
       "pushedAt": "2026-10-20",
       "defaultBranch": "main",
-      "stars": 86,
+      "stars": 87,
       "forks": 11,
       "latestRelease": {
         "tag": "v0.6.8",
@@ -240,6 +240,60 @@
           "date": "2026-09-15",
           "prerelease": false,
           "url": "https://github.com/McCal-Codes/folio/releases/tag/v0.5.0"
+        }
+      ]
+    },
+    {
+      "slug": "apature",
+      "owner": "McCal-Codes",
+      "repo": "apature",
+      "fullName": "McCal-Codes/apature",
+      "url": "https://github.com/McCal-Codes/apature",
+      "private": true,
+      "description": "Apature: keyboard-first contact sheet, culling, captions, export and delivery for photojournalists. The Photo Mechanic loop, rebuilt in Rust for macOS. Free, open source.",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "topics": [
+        "contact-sheet",
+        "culling",
+        "egui",
+        "ingest",
+        "iptc",
+        "macos",
+        "metadata",
+        "open-source",
+        "photo-mechanic",
+        "photography",
+        "photojournalism",
+        "raw",
+        "rust",
+        "xmp"
+      ],
+      "languages": [
+        {
+          "name": "Rust",
+          "percent": 99
+        }
+      ],
+      "createdAt": "2026-10-13",
+      "pushedAt": "2026-10-21",
+      "defaultBranch": "main",
+      "stars": 0,
+      "forks": 0,
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "name": "v0.1.0",
+        "date": "2026-10-21",
+        "prerelease": false,
+        "url": "https://github.com/McCal-Codes/apature/releases/tag/v0.1.0"
+      },
+      "releases": [
+        {
+          "tag": "v0.1.0",
+          "name": "v0.1.0",
+          "date": "2026-10-21",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/apature/releases/tag/v0.1.0"
         }
       ]
     },
