@@ -6,6 +6,12 @@ import type { ActivityEntry } from './types';
  */
 export const ACTIVITY: ActivityEntry[] = [
   {
+    project: 'Apature',
+    slug: 'apature',
+    detail:
+      '0.1.0 is the first shareable build, running my own assignments end to end. Next: the update check lands in 0.1.1, then onboarding that teaches the loop.',
+  },
+  {
     project: 'Folio',
     slug: 'folio',
     detail:

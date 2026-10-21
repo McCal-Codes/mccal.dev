@@ -24,10 +24,10 @@ const SITE_URL = 'https://mccal.dev';
 const STATIC_ROUTES = ['/', '/notes', '/roadmap', '/about'];
 
 /** Projects with a case study. These get a pre-rendered page. */
-const CASE_STUDY_SLUGS = ['terranova', 'abridgd', 'folio'];
+const CASE_STUDY_SLUGS = ['terranova', 'abridgd', 'folio', 'apature'];
 
 /** Every project in the index, including those without a case study. */
-const ALL_SLUGS = ['terranova', 'abridgd', 'folio'];
+const ALL_SLUGS = ['terranova', 'abridgd', 'folio', 'apature'];
 
 /**
  * `frame-ancestors`, `report-uri`/`report-to` and `sandbox` are ignored in a
