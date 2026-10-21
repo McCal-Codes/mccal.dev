@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-10-20T06:49:14.541Z",
+  "generatedAt": "2026-10-21T06:50:01.485Z",
   "repos": [
     {
       "slug": "terranova",
@@ -170,16 +170,12 @@
         {
           "name": "Kotlin",
           "percent": 93
-        },
-        {
-          "name": "JavaScript",
-          "percent": 3
         }
       ],
       "createdAt": "2026-09-15",
       "pushedAt": "2026-10-20",
       "defaultBranch": "main",
-      "stars": 85,
+      "stars": 86,
       "forks": 11,
       "latestRelease": {
         "tag": "v0.6.8",
