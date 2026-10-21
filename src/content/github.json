@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-10-21T16:27:15.004Z",
+  "generatedAt": "2026-10-21T18:39:17.562Z",
   "repos": [
     {
       "slug": "terranova",
@@ -169,11 +169,15 @@
       "languages": [
         {
           "name": "Kotlin",
-          "percent": 93
+          "percent": 92
+        },
+        {
+          "name": "JavaScript",
+          "percent": 4
         }
       ],
       "createdAt": "2026-09-15",
-      "pushedAt": "2026-10-20",
+      "pushedAt": "2026-10-21",
       "defaultBranch": "main",
       "stars": 87,
       "forks": 11,
@@ -249,7 +253,7 @@
       "repo": "apature",
       "fullName": "McCal-Codes/apature",
       "url": "https://github.com/McCal-Codes/apature",
-      "private": true,
+      "private": false,
       "description": "Apature: keyboard-first contact sheet, culling, captions, export and delivery for photojournalists. The Photo Mechanic loop, rebuilt in Rust for macOS. Free, open source.",
       "homepage": "",
       "license": "Apache-2.0",
@@ -272,7 +276,7 @@
       "languages": [
         {
           "name": "Rust",
-          "percent": 99
+          "percent": 97
         }
       ],
       "createdAt": "2026-10-13",
