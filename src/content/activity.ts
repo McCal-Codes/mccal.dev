@@ -9,7 +9,7 @@ export const ACTIVITY: ActivityEntry[] = [
     project: 'Apature',
     slug: 'apature',
     detail:
-      '0.1.0 is the first shareable build, running my own assignments end to end. Next: the update check lands in 0.1.1, then onboarding that teaches the loop.',
+      '0.1.1 adds Linux and Windows, a welcome that teaches the loop, receive over Wi-Fi and a rebuilt Settings. Next: the Photo Mechanic import and a resources page for students.',
   },
   {
     project: 'Folio',

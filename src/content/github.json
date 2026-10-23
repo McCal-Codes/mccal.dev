@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-10-23T06:49:58.129Z",
+  "generatedAt": "2026-10-23T13:39:00.684Z",
   "repos": [
     {
       "slug": "terranova",
@@ -102,7 +102,7 @@
         }
       ],
       "createdAt": "2026-01-12",
-      "pushedAt": "2026-09-16",
+      "pushedAt": "2026-10-23",
       "defaultBranch": "master",
       "stars": 1,
       "forks": 0,
@@ -276,22 +276,29 @@
       "languages": [
         {
           "name": "Rust",
-          "percent": 97
+          "percent": 96
         }
       ],
       "createdAt": "2026-10-13",
-      "pushedAt": "2026-10-21",
+      "pushedAt": "2026-10-23",
       "defaultBranch": "main",
       "stars": 0,
       "forks": 1,
       "latestRelease": {
-        "tag": "v0.1.0",
-        "name": "v0.1.0",
-        "date": "2026-10-21",
+        "tag": "v0.1.1",
+        "name": "v0.1.1",
+        "date": "2026-10-23",
         "prerelease": false,
-        "url": "https://github.com/McCal-Codes/apature/releases/tag/v0.1.0"
+        "url": "https://github.com/McCal-Codes/apature/releases/tag/v0.1.1"
       },
       "releases": [
+        {
+          "tag": "v0.1.1",
+          "name": "v0.1.1",
+          "date": "2026-10-23",
+          "prerelease": false,
+          "url": "https://github.com/McCal-Codes/apature/releases/tag/v0.1.1"
+        },
         {
           "tag": "v0.1.0",
           "name": "v0.1.0",
