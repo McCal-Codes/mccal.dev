@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-11-01T22:14:23.566Z",
+  "generatedAt": "2026-11-02T16:23:27.317Z",
   "repos": [
     {
       "slug": "terranova",
@@ -179,8 +179,8 @@
       "createdAt": "2026-09-15",
       "pushedAt": "2026-10-31",
       "defaultBranch": "main",
-      "stars": 107,
-      "forks": 13,
+      "stars": 110,
+      "forks": 14,
       "latestRelease": {
         "tag": "v0.6.9",
         "name": "Folio - smoother and refined more than ever",
