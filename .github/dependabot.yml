@@ -1,14 +1,23 @@
 # The package's dependencies were unmanaged while it lived in the monorepo:
 # that repo's dependabot config had no entry for this path.
+# Minor and patch updates arrive as one pull request a week; majors get their own.
+
 version: 2
 updates:
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: weekly
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 3
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
+    open-pull-requests-limit: 3
+    groups:
+      actions:
+        patterns: ['*']
