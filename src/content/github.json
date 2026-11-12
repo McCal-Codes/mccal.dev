@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-11-11T14:37:21.415Z",
+  "generatedAt": "2026-11-12T00:54:01.694Z",
   "repos": [
     {
       "slug": "terranova",
@@ -89,7 +89,7 @@
       "private": false,
       "description": "A calm, local-first news reader for Pittsburgh. Built to make local news feel finite, readable, and worth returning to.",
       "homepage": "",
-      "license": null,
+      "license": "MIT",
       "topics": [],
       "languages": [
         {
@@ -107,13 +107,20 @@
       "stars": 1,
       "forks": 0,
       "latestRelease": {
-        "tag": "v1.5.7",
-        "name": "v1.5.7",
-        "date": "2026-09-07",
-        "prerelease": false,
-        "url": "https://github.com/McCal-Codes/abridgd/releases/tag/v1.5.7"
+        "tag": "v0.2.0-beta.2",
+        "name": "Abridgd 0.2.0 beta 2 (Android)",
+        "date": "2026-11-11",
+        "prerelease": true,
+        "url": "https://github.com/McCal-Codes/abridgd/releases/tag/v0.2.0-beta.2"
       },
       "releases": [
+        {
+          "tag": "v0.2.0-beta.2",
+          "name": "Abridgd 0.2.0 beta 2 (Android)",
+          "date": "2026-11-11",
+          "prerelease": true,
+          "url": "https://github.com/McCal-Codes/abridgd/releases/tag/v0.2.0-beta.2"
+        },
         {
           "tag": "v1.5.7",
           "name": "v1.5.7",
@@ -175,7 +182,7 @@
       "createdAt": "2026-09-15",
       "pushedAt": "2026-11-11",
       "defaultBranch": "main",
-      "stars": 120,
+      "stars": 121,
       "forks": 17,
       "latestRelease": {
         "tag": "v0.6.9.1",
