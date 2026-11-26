@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/sync-github.js",
-  "generatedAt": "2026-11-25T17:28:31.633Z",
+  "generatedAt": "2026-11-26T01:53:04.741Z",
   "repos": [
     {
       "slug": "terranova",
@@ -183,7 +183,7 @@
       "pushedAt": "2026-11-25",
       "defaultBranch": "main",
       "stars": 134,
-      "forks": 20,
+      "forks": 22,
       "latestRelease": {
         "tag": "v0.6.9.2",
         "name": "Folio 0.6.9.2",
